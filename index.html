@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--문서의 유형을 정의합니다-->
+<html lang="ko">
+    <!-- 문서의 루트요소로 HTML의 시작을알림
+    language는 한국어로 설정 -->
+    <head>
+        <!-- 헤드태그는 문서의 정보를 나타내는 태그. 문서의 정보는 메타 태그를 이용하여 설정 -->
+        <meta charset="UTF-8">
+        <!-- charater set 사용할 문자 집합을 설정 -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- 반응형 웹 디자인 = 각 출력 디스플레이 화면에 맞게끔 출력하는 디자인
+        반응형 디자인을 위한 메타태그 -->
+        <title>회원등록</title>
+    </head>
+    <body>
+        <!-- 화면에 뿌려줄 데이터를 삽입 -->
+         <div>
+            <!-- div 태그는 태그 안에 다른 태그나 값을 넣기 전까지는 영역과 공간을 가지지 않습니다 -->
+             <form action="">
+                <!-- form 태그는 프론트에서 백으로 데이터를 보내고자 할때 input 태그와 같이 작성하는 태그 -->
+                 <h2>회원등록</h2>
+                 <div>
+                    <label for="nickname">사용자이름</label>
+                    <input type="text">
+                    <span>알림</span>
+                 </div>
+                 <div>
+                    <label for="userEmail">이메일주소</label>
+                    <input type="email">
+                    <span>알림</span>
+                 </div>
+                 <div>
+                    <label for="userPassword">비밀번호</label>
+                    <input type="password">
+                    <span>알림</span>
+                 </div>
+                 <div>
+                    <label for="confirmPassword">비밀번호 확인</label>
+                    <input type="text">
+                    <span>알림</span>
+                 </div>
+                 <div>
+                    <label for="phone">휴대폰 번호</label>
+                    <input type="text">
+                    <span>예: 010-0000-0000</span>
+                 </div>
+                 <button type="submit">등록 완료</button>
+             </form>
+         </div>
+
+    </body>
+
+</html>
