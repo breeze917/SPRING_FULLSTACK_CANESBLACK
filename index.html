@@ -11,38 +11,39 @@
         <!-- 반응형 웹 디자인 = 각 출력 디스플레이 화면에 맞게끔 출력하는 디자인
         반응형 디자인을 위한 메타태그 -->
         <title>회원등록</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- 화면에 뿌려줄 데이터를 삽입 -->
-         <div>
+         <div id="wrapper" class="wrapper">
             <!-- div 태그는 태그 안에 다른 태그나 값을 넣기 전까지는 영역과 공간을 가지지 않습니다 -->
-             <form action="">
+             <form id="registrationForm" class="registrationForm">
                 <!-- form 태그는 프론트에서 백으로 데이터를 보내고자 할때 input 태그와 같이 작성하는 태그 -->
                  <h2>회원등록</h2>
-                 <div>
+                 <div class="inputGroup">
                     <label for="nickname">사용자이름</label>
-                    <input type="text">
-                    <span>알림</span>
+                    <input type="text" id="nickname" class="nicknameinput">
+                    <span class="helperText">알림</span>
                  </div>
                  <div>
                     <label for="userEmail">이메일주소</label>
-                    <input type="email">
-                    <span>알림</span>
+                    <input type="email" id="email" class="emailinput">
+                    <span class="helperText">알림</span>
                  </div>
                  <div>
                     <label for="userPassword">비밀번호</label>
-                    <input type="password">
-                    <span>알림</span>
+                    <input type="password" id="password" class="passwordinput">
+                    <span class="helperText">알림</span>
                  </div>
                  <div>
                     <label for="confirmPassword">비밀번호 확인</label>
-                    <input type="text">
-                    <span>알림</span>
+                    <input type="text" id="confirmPassword" class="passwordinput">
+                    <span class="helperText">알림</span>
                  </div>
                  <div>
                     <label for="phone">휴대폰 번호</label>
-                    <input type="text">
-                    <span>예: 010-0000-0000</span>
+                    <input type="tel" id="phone" class="phoneinput">
+                    <span class="helperText">예: 010-0000-0000</span>
                  </div>
                  <button type="submit">등록 완료</button>
              </form>
